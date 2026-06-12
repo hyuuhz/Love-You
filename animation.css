@@ -1,0 +1,444 @@
+/* ===================================== */
+/* FADE UP */
+/* ===================================== */
+
+@keyframes fadeUp {
+
+    from {
+        opacity:0;
+        transform:
+        translateY(60px);
+    }
+
+    to {
+        opacity:1;
+        transform:
+        translateY(0);
+    }
+
+}
+
+/* ===================================== */
+/* FADE DOWN */
+/* ===================================== */
+
+@keyframes fadeDown {
+
+    from {
+        opacity:0;
+        transform:
+        translateY(-60px);
+    }
+
+    to {
+        opacity:1;
+        transform:
+        translateY(0);
+    }
+
+}
+
+/* ===================================== */
+/* FADE IN */
+/* ===================================== */
+
+@keyframes fadeIn {
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ===================================== */
+/* ZOOM CINEMÁTICO */
+/* ===================================== */
+
+@keyframes cinematicZoom {
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(1.15);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+    }
+
+}
+
+/* ===================================== */
+/* FLOAT */
+/* ===================================== */
+
+@keyframes float {
+
+    0%{
+        transform:
+        translateY(0);
+    }
+
+    50%{
+        transform:
+        translateY(-18px);
+    }
+
+    100%{
+        transform:
+        translateY(0);
+    }
+
+}
+
+/* ===================================== */
+/* FLOAT SLOW */
+/* ===================================== */
+
+@keyframes floatSlow {
+
+    0%{
+        transform:
+        translateY(0);
+    }
+
+    50%{
+        transform:
+        translateY(-35px);
+    }
+
+    100%{
+        transform:
+        translateY(0);
+    }
+
+}
+
+/* ===================================== */
+/* GLOW */
+/* ===================================== */
+
+@keyframes glow {
+
+    0%{
+
+        text-shadow:
+        0 0 10px #fff,
+        0 0 25px #ffd166;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 30px #fff,
+        0 0 80px #ffd166,
+        0 0 120px #ffd166;
+
+    }
+
+    100%{
+
+        text-shadow:
+        0 0 10px #fff,
+        0 0 25px #ffd166;
+
+    }
+
+}
+
+/* ===================================== */
+/* LIGHT SWEEP */
+/* ===================================== */
+
+@keyframes lightSweep {
+
+    0%{
+
+        left:-150%;
+
+    }
+
+    100%{
+
+        left:150%;
+
+    }
+
+}
+
+/* ===================================== */
+/* HEART BEAT */
+/* ===================================== */
+
+@keyframes heartbeat {
+
+    0%{
+        transform:scale(1);
+    }
+
+    25%{
+        transform:scale(1.08);
+    }
+
+    40%{
+        transform:scale(1);
+    }
+
+    60%{
+        transform:scale(1.12);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ===================================== */
+/* LETTER OPEN */
+/* ===================================== */
+
+@keyframes letterOpen {
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(80px)
+        rotateX(90deg);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        rotateX(0);
+
+    }
+
+}
+
+/* ===================================== */
+/* CINEMATIC REVEAL */
+/* ===================================== */
+
+@keyframes cinematicReveal {
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.95)
+        translateY(40px);
+
+        filter:
+        blur(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1)
+        translateY(0);
+
+        filter:
+        blur(0);
+
+    }
+
+}
+
+/* ===================================== */
+/* STARS */
+/* ===================================== */
+
+@keyframes twinkle {
+
+    0%{
+        opacity:.2;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.2;
+    }
+
+}
+
+/* ===================================== */
+/* ROSE PETALS */
+/* ===================================== */
+
+@keyframes fallingPetal {
+
+    from{
+
+        transform:
+        translateY(-100px)
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===================================== */
+/* FIREWORKS */
+/* ===================================== */
+
+@keyframes explode {
+
+    0%{
+
+        transform:
+        scale(0);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+        scale(4);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===================================== */
+/* BUTTON GLOW */
+/* ===================================== */
+
+@keyframes buttonPulse {
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(255,209,102,.3);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 40px rgba(255,209,102,.6);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(255,209,102,.3);
+
+    }
+
+}
+
+/* ===================================== */
+/* HERO TITLE */
+/* ===================================== */
+
+.hero-title{
+
+    animation:
+    glow 4s infinite,
+    fadeUp 2s ease;
+}
+
+/* ===================================== */
+/* HERO BUTTON */
+/* ===================================== */
+
+.hero-btn{
+
+    animation:
+    buttonPulse 3s infinite;
+}
+
+/* ===================================== */
+/* QUALITY CARD */
+/* ===================================== */
+
+.quality-card{
+
+    animation:
+    cinematicReveal .8s ease;
+}
+
+/* ===================================== */
+/* BALLOONS */
+/* ===================================== */
+
+.balloon{
+
+    animation:
+    float 4s ease-in-out infinite;
+}
+
+/* ===================================== */
+/* ENVELOPE */
+/* ===================================== */
+
+#envelope{
+
+    animation:
+    floatSlow 5s ease-in-out infinite;
+}
+
+/* ===================================== */
+/* FINAL TITLE */
+/* ===================================== */
+
+.final-content h1{
+
+    animation:
+    glow 5s infinite;
+}
+
+/* ===================================== */
+/* LAST SCREEN */
+/* ===================================== */
+
+.last-screen-content{
+
+    animation:
+    cinematicReveal 2s ease;
+}
