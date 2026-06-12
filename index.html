@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Bárbara ❤️</title>
+
+<meta name="description" content="Uma história feita para Bárbara">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/effects.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+    <div class="loader-heart">
+        ❤️
+    </div>
+
+</div>
+
+<!-- MÚSICA -->
+
+<audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle">
+    ♫
+</button>
+
+<!-- CURSOR GLOW -->
+
+<div id="cursorGlow"></div>
+
+<!-- ESTRELAS -->
+
+<canvas id="starsCanvas"></canvas>
+
+<!-- PARTÍCULAS -->
+
+<canvas id="particlesCanvas"></canvas>
+
+<!-- PÉTALAS -->
+
+<div id="petalsContainer"></div>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section id="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-subtitle">
+            Algumas histórias começam sem aviso...
+        </span>
+
+        <h1 class="hero-title">
+            Bárbara ❤️
+        </h1>
+
+        <p class="hero-text">
+            E mudam tudo.
+        </p>
+
+        <button class="hero-btn" data-scroll="#qualities">
+            Começar
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- QUALIDADES -->
+<!-- ========================= -->
+
+<section id="qualities">
+
+    <div class="section-header">
+
+        <span>Capítulo I</span>
+
+        <h2>Quem Você É</h2>
+
+        <p>
+            Algumas coisas merecem ser lembradas.
+        </p>
+
+    </div>
+
+    <div class="qualities-grid">
+
+        <div class="quality-card">
+            ❤️ Seu sorriso
+        </div>
+
+        <div class="quality-card">
+            ❤️ Sua voz
+        </div>
+
+        <div class="quality-card">
+            ❤️ Seu jeito
+        </div>
+
+        <div class="quality-card">
+            ❤️ Sua força
+        </div>
+
+        <div class="quality-card">
+            ❤️ Sua presença
+        </div>
+
+        <div class="quality-card">
+            ❤️ Sua essência
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MEMÓRIAS -->
+<!-- ========================= -->
+
+<section id="timeline">
+
+    <div class="section-header">
+
+        <span>Capítulo II</span>
+
+        <h2>Memórias</h2>
+
+        <p>
+            Talvez você nem lembre...
+            mas eu lembro.
+        </p>
+
+    </div>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>Primeira Conversa</h3>
+                <p>
+                    O começo de algo especial.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>Primeira Madrugada</h3>
+                <p>
+                    Quando o tempo passou sem percebermos.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>O Momento</h3>
+                <p>
+                    Quando percebi que você era diferente.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BALÕES -->
+<!-- ========================= -->
+
+<section id="balloonsSection">
+
+    <div class="section-header">
+
+        <span>Capítulo III</span>
+
+        <h2>Descubra</h2>
+
+        <p>
+            Clique nos balões.
+        </p>
+
+    </div>
+
+    <div id="balloonsContainer">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GALERIA -->
+<!-- ========================= -->
+
+<section id="gallery">
+
+    <div class="section-header">
+
+        <span>Capítulo IV</span>
+
+        <h2>Nossos Momentos</h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="photo-card">
+            <img src="assets/photos/photo1.jpg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo2.jpg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo3.jpg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="assets/photos/photo4.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CARTA -->
+<!-- ========================= -->
+
+<section id="letterSection">
+
+    <div class="section-header">
+
+        <span>Capítulo V</span>
+
+        <h2>Uma Carta Para Você</h2>
+
+    </div>
+
+    <div id="envelope">
+
+        <div class="envelope-front">
+            ✉
+        </div>
+
+    </div>
+
+    <div id="letter">
+
+        <div class="letter-paper">
+
+            <h3>Bárbara ❤️</h3>
+
+            <p id="typewriterText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SILÊNCIO -->
+<!-- ========================= -->
+
+<section id="silence">
+
+    <div class="silence-content">
+
+        <p>
+            ...
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CLÍMAX -->
+<!-- ========================= -->
+
+<section id="climax">
+
+    <div class="climax-content">
+
+        <p>Entre bilhões de pessoas...</p>
+
+        <p>Existem algumas que mudam tudo.</p>
+
+        <p>Você mudou.</p>
+
+        <p>O meu mundo.</p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL -->
+<!-- ========================= -->
+
+<section id="final">
+
+    <div id="fireworksCanvas"></div>
+
+    <div class="final-content">
+
+        <h1>
+            Bárbara ❤️
+        </h1>
+
+        <h2>
+            Feliz Dia dos Namorados
+        </h2>
+
+        <p>
+            Com todo meu carinho.
+        </p>
+
+        <button id="lastMessageBtn">
+            Uma Última Mensagem
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ÚLTIMA TELA -->
+<!-- ========================= -->
+
+<section id="lastScreen">
+
+    <div class="last-screen-content">
+
+        <h1>
+            Obrigado por existir.
+        </h1>
+
+        <p>
+            E por fazer parte da minha história.
+        </p>
+
+        <span>
+            — Hyu ❤️
+        </span>
+
+    </div>
+
+</section>
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/stars.js"></script>
+
+<script src="js/particles.js"></script>
+
+<script src="js/petals.js"></script>
+
+<script src="js/balloons.js"></script>
+
+<script src="js/letter.js"></script>
+
+<script src="js/finale.js"></script>
+
+</body>
+</html>
