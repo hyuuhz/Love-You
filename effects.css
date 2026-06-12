@@ -548,3 +548,117 @@ box-shadow:
 
 0 10px 40px rgba(0,0,0,.2);
 }
+
+/* ===================================== */
+/* LETTER */
+/* ===================================== */
+
+#letter{
+
+opacity:0;
+
+transform:
+translateY(80px)
+scale(.95);
+
+transition:
+1.2s ease;
+}
+
+.letter-visible{
+
+opacity:1 !important;
+
+transform:
+translateY(0)
+scale(1) !important;
+}
+
+/* ===================================== */
+/* ENVELOPE OPEN */
+/* ===================================== */
+
+#envelope{
+
+transition:
+1s ease;
+
+transform-origin:center;
+}
+
+#envelope.opened{
+
+transform:
+
+rotateX(25deg)
+
+scale(1.05)
+
+translateY(-20px);
+
+opacity:.9;
+}
+
+/* ===================================== */
+/* PAPER */
+/* ===================================== */
+
+.letter-paper{
+
+animation:
+paperAppear 1.5s ease;
+}
+
+@keyframes paperAppear{
+
+from{
+
+opacity:0;
+
+transform:
+
+translateY(100px)
+
+rotateX(90deg);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+
+translateY(0)
+
+rotateX(0);
+
+}
+
+}
+
+/* ===================================== */
+/* TYPEWRITER */
+/* ===================================== */
+
+#typewriterText{
+
+white-space:pre-line;
+
+line-height:2;
+
+font-size:1.15rem;
+}
+
+/* ===================================== */
+/* LETTER GLOW */
+/* ===================================== */
+
+.letter-paper{
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.35),
+
+0 0 100px rgba(255,209,102,.08);
+}
